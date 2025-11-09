@@ -6,11 +6,11 @@ A professional, full-featured web application for creating, managing, and export
 ![MongoDB](https://img.shields.io/badge/MongoDB-4.11+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## 🌟 Overview
+## Overview
 
-Resume Builder is a comprehensive web application that empowers users to create professional resumes with ease. Built with Java Servlets, JSP, and MongoDB, it features a beautiful Material Design interface with dark theme support, multiple export formats, and complete user management.
+Resume Builder is a comprehensive web application that empowers users to create professional resumes with minimal effort. Built with Java Servlets, JSP, and MongoDB, it features a beautiful Material Design interface with dark theme support, multiple export formats, and complete user management.
 
-### ✨ Key Features
+### Key Features
 
 - 🔐 **Secure Authentication** - BCrypt password hashing with session management
 - 📝 **Resume Management** - Create, edit, preview, and delete resumes
@@ -21,7 +21,7 @@ Resume Builder is a comprehensive web application that empowers users to create 
 - 📱 **Responsive Design** - Works seamlessly on desktop, tablet, and mobile
 - 🌙 **Dark Theme** - Eye-friendly dark mode with persistent preference
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -33,7 +33,7 @@ Resume Builder is a comprehensive web application that empowers users to create 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/resume-builder.git
+   git clone https://github.com/MR-1124/resume-builder.git
    cd resume-builder
    ```
 
@@ -53,9 +53,7 @@ Resume Builder is a comprehensive web application that empowers users to create 
    ```bash
    # Using Maven
    mvn clean tomcat7:run
-   
-   # Or use the provided script (Windows)
-   run.bat
+
    ```
 
 4. **Access the application**
@@ -76,14 +74,14 @@ Resume Builder is a comprehensive web application that empowers users to create 
    - Projects
    - Skills
    - Achievements
-4. **Choose Template** - Select Classic or Modern template
+4. **Choose Template** - Select Classic or Modern template as per your preference
 5. **Save** - Your resume is automatically saved to the database
 
 ### Managing Resumes
 
 - **Preview** - View your resume before downloading
-- **Edit** - Update any section of your resume
-- **Download PDF** - Get a print-ready PDF document
+- **Edit** - Update any part of your resume
+- **Download PDF** - Get a print-ready PDF doc
 - **Download XML** - Export structured data for backup
 - **Delete** - Remove unwanted resumes
 
@@ -93,7 +91,7 @@ Resume Builder is a comprehensive web application that empowers users to create 
 - Change your password securely
 - View account statistics
 
-## 🏗️ Architecture
+## Architecture
 
 ### Technology Stack
 
@@ -104,7 +102,7 @@ Resume Builder is a comprehensive web application that empowers users to create 
 - Maven (Build Tool)
 
 **Database:**
-- MongoDB 4.11.1
+- MongoDB
 - MongoDB Java Driver
 
 **Frontend:**
@@ -143,20 +141,20 @@ resume-builder/
 
 ### Authentication & Security
 
-- **BCrypt Password Hashing** - Industry-standard password encryption with 10 rounds
+- **BCrypt Password Hashing** 
 - **Session Management** - Secure session handling with 30-minute timeout
 - **Input Validation** - Server-side validation for all user inputs
 - **Access Control** - Protected routes requiring authentication
 
-### Resume Templates
+### Resume Templates Provided
 
-#### Classic Template
+#### Classic Template Design
 - Traditional professional design
 - Times New Roman font
 - Black and white color scheme
 - ATS-friendly formatting
 
-#### Modern Template
+#### Modern Template Design
 - Contemporary design
 - Helvetica font
 - Colored section headers
@@ -164,31 +162,30 @@ resume-builder/
 
 ### Export Formats
 
-#### PDF Export
-- High-quality, print-ready documents
-- Professional formatting
+#### PDF Export Feature
+- Print-ready documents
+- Professional classic resume design formatting
 - Embedded fonts
 - Proper page breaks
 
-#### XML Export
+#### XML Export Feature
 - Structured data format
-- Easy to parse and process
 - Backup and portability
 - Integration-friendly
 
-### Material Design UI
+### Inspired by Material Design UI
 
 - **Elevation System** - 5-level shadow hierarchy
 - **Color Palette** - Purple-blue gradient theme
 - **Typography** - Roboto font family
-- **Animations** - Smooth 60fps transitions
+- **Animations** - Smooth transitions
 - **Responsive Grid** - Flexible layouts for all devices
 
 ### Dark Theme
 
 - **Eye-friendly** - Reduced eye strain in low-light conditions
 - **Persistent** - Theme preference saved in localStorage
-- **Smooth Transitions** - Animated theme switching
+- **Smooth Transitions** - Smooth theme switching
 - **Consistent** - All pages support dark mode
 
 ## 🔧 Configuration
@@ -271,29 +268,11 @@ mvn package
 mvn tomcat7:run
 ```
 
-### Project Scripts
+### Project Scripts provided
 
-- `run.bat` - Start the application
-- `build.bat` - Build the project
 - `start-mongodb.bat` - Start MongoDB service
 
-## 🐛 Bug Fixes & Updates
-
-### Recent Fixes
-
-1. **Delete Functionality** - Fixed issue where delete created blank entries
-   - Updated routing in ResumeServlet to properly handle delete requests
-   
-2. **Edit Resume Update** - Fixed issue where editing created new entries
-   - Corrected form submission endpoint in edit-resume.js
-   - Ensured proper context path extraction via JavaScript
-   - Updated ResumeServlet to handle /update/{id} correctly
-
-3. **Dark Theme Preview** - Fixed text visibility in resume preview
-   - Added specific CSS overrides for preview content
-   - Ensured proper contrast in dark mode
-
-## 📝 API Endpoints
+## API Endpoints Details
 
 ### Authentication
 - `GET /login` - Login page
@@ -336,7 +315,7 @@ mvn tomcat7:run
 mvn tomcat7:run
 ```
 
-### Production Deployment
+### Deploy and run
 
 1. **Build WAR file**
    ```bash
@@ -358,32 +337,7 @@ mvn tomcat7:run
    - Update Tomcat server.xml
    - Redirect HTTP to HTTPS
 
-## 🧪 Testing
-
-### Manual Testing Checklist
-
-- [ ] User registration and login
-- [ ] Create new resume
-- [ ] Edit existing resume
-- [ ] Delete resume
-- [ ] Preview resume
-- [ ] Download PDF
-- [ ] Download XML
-- [ ] Update profile
-- [ ] Change password
-- [ ] Theme toggle
-- [ ] Responsive design
-- [ ] Session timeout
-
-## 📈 Performance
-
-- **Page Load Time**: < 2 seconds
-- **PDF Generation**: < 3 seconds
-- **Database Queries**: < 100ms average
-- **Animation Frame Rate**: 60fps
-- **Concurrent Users**: 100+ (single instance)
-
-## 🔒 Security Features
+## Security Features Added
 
 - BCrypt password hashing (10 rounds)
 - Session-based authentication
@@ -415,27 +369,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📞 Support
-
-For support, email support@resumebuilder.com or open an issue in the repository.
-
-## 🙏 Acknowledgments
-
-- Material Design by Google
-- iText PDF Library
-- MongoDB Java Driver
-- BCrypt Password Hashing
-- Apache Tomcat Server
-
-## 📚 Documentation
-
-For detailed documentation, see:
-- [Setup Guide](SETUP_GUIDE.md)
-- [Quick Start](QUICK_START.md)
-- [Application Flow](APPLICATION_FLOW.txt)
-- [Material Design Guide](MATERIAL_DESIGN_GUIDE.md)
-- [Deployment Checklist](DEPLOYMENT_CHECKLIST.md)
-
 ---
 
-**Made with ❤️ for job seekers and students**
+**Made as a Semester Project for Java**
