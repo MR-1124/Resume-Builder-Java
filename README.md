@@ -309,7 +309,7 @@ mvn tomcat7:run
 
 ## 🚀 Deployment
 
-### Development Deployment
+### Deployment
 
 ```bash
 mvn tomcat7:run
@@ -337,27 +337,9 @@ mvn tomcat7:run
    - Update Tomcat server.xml
    - Redirect HTTP to HTTPS
 
-## Security Features Added
-
-- BCrypt password hashing (10 rounds)
-- Session-based authentication
-- Input validation and sanitization
-- XSS protection
-- CSRF protection
-- Secure session cookies
-- Password strength requirements
-
-## 🌐 Browser Support
-
-- ✅ Chrome 90+
-- ✅ Firefox 88+
-- ✅ Safari 14+
-- ✅ Edge 90+
-- ⚠️ Internet Explorer 11 (Limited)
-
 ## 📄 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License
 
 ## 👥 Contributing
 
